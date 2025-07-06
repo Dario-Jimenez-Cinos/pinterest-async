@@ -1,0 +1,88 @@
+
+
+.card{
+    display: inline-block;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: max-content;
+    break-inside: avoid;
+    text-align: center;
+    font-weight: bold;
+    &:hover {
+        .card-likes,
+        .total-photos,
+        .visitar-button {
+          display: block;
+        }
+    
+        .card-image {
+          filter: brightness(50%);
+        }
+      }
+}
+
+.card-image{
+    width: 180px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.owner-image{
+    position: relative;
+    bottom: 40px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.owner-name{
+    position: relative;
+    bottom: 35px;
+
+}
+
+.upload-date{
+    position: relative;
+    bottom: 30px;
+
+}
+
+.visitar-button{
+    display: none;
+    position: absolute;
+    top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.total-photos{
+    display:none;
+    position: absolute;
+    text-align: center;
+    padding-top: 5px;
+    top: 10px;
+    left: 20px;
+    width: 50px;
+    height: 45px;
+    background-color: rgba(255, 255, 255, 0.555);
+    border-radius: 45px;
+    pointer-events: none;
+}
+
+.card-likes{
+    background-color: rgba(255, 255, 255, 0.555);
+    display: none;
+    position: absolute;
+    text-align: center;
+    padding-top: 5px;
+    width: 50px;
+    height: 45px;
+    top: 10px;
+    right: 20px;
+    border-radius: 45px;
+    pointer-events: none;
+}
+

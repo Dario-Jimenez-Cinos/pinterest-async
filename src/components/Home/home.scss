@@ -1,0 +1,11 @@
+.home-container{
+    width: 100%;
+    height: calc(100vh - 100px);
+}
+
+.images-container{
+    columns: 180px;
+    gap: 0px;
+    width: fit-content;
+    height: fit-content;
+}

@@ -1,0 +1,66 @@
+header{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    .msg-icon{
+        width: 37px;
+        height: 37px;
+        cursor: pointer;
+    }
+    .notifications-icon, .profile-icon, .logo{
+        width: 45px;
+        height: 45px;
+        cursor: pointer;
+    }
+}
+
+
+
+.search-input {
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(209, 209, 209);
+    width: 75%;
+    height: 40px;
+    font-size: 14px ;
+    padding-left: 15px;
+    &:hover{
+        background-color: rgb(182, 182, 182);
+    }
+}
+
+.explorar-button, .inicio-button, .crear-button {
+    display: block;
+}
+
+@media (max-width: 650px) {
+    .explorar-button, .inicio-button, .crear-button {
+        display: none;
+    }
+}
+
+.search-input {
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(209, 209, 209);
+    width: 75%;
+    height: 40px;
+    font-size: 14px ;
+    padding-left: 15px;
+    &:hover{
+        background-color: rgb(182, 182, 182);
+    }
+}
+
+.notifications-icon, .msg-icon{
+    display: block;
+}
+
+@media (max-width: 650px) {
+        .notifications-icon, .msg-icon{
+            display: none;
+        }
+ }
