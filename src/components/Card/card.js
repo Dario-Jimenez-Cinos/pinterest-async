@@ -7,6 +7,7 @@ export default function Card(imageData){
     cardContainer.className = 'card';
 
     const image = document.createElement('img');
+    image.alt = imageData.alt_description;
     image.src = imageData.urls.small;
     image.classList.add('card-image');
 

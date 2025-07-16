@@ -1,16 +1,13 @@
 import { Button } from "../Button/button";
-import loadInitialState from "../Utils/initialState";
 import printImages from '../Utils/printImages';
 import "./header.scss";
 
 export const Header = () => {
     const header = document.createElement("header");
 
-    const body = document.querySelector("body");
-
     const logo = document.createElement("img");
     logo.classList.add('logo');
-    logo.src = "src/Resources/Pinterest-logo.png";
+    logo.src = "public/Assets/Pinterest-logo.png";
 
 
     const searchInput = document.createElement("input");
@@ -19,20 +16,20 @@ export const Header = () => {
     searchInput.placeholder = "   🔎 Buscar";
 
     const msg = document.createElement("img");
-    msg.src = "src/Resources/Message-icon-grey.png";
+    msg.src = "public/Assets/Message-icon-grey.png";
     msg.classList.add('msg-icon');
 
     const notifications = document.createElement("img");
-    notifications.src = "src/Resources/bell-grise.png";
+    notifications.src = "public/Assets/bell-grise.png";
     notifications.classList.add('notifications-icon');
 
     const profile = document.createElement("img");
-    profile.src = "src/Resources/profile-icon-design-free-vector.jpg";
+    profile.src = "public/Assets/profile-icon-design-free-vector.jpg";
     profile.classList.add('profile-icon');
 
     header.append(
         logo,
-        Button({text: "Inicio", type: "secondary", fnc: () => {loadInitialState()}, className: 'inicio-button'}),
+        Button({text: "Inicio", type: "secondary", fnc: () => {printImages('gatos')}, className: 'inicio-button'}),
         Button({text: "Explorar", className: 'explorar-button'}),
         Button({text: "Crear", className: 'crear-button'}),
         searchInput, 
@@ -49,7 +46,7 @@ export const Header = () => {
         })
 
         logo.addEventListener('click', () => {
-            loadInitialState();
+            printImages('gatos');
         })
     
     return header;

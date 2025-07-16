@@ -1,6 +1,3 @@
-//https://api.unsplash.com/search/photo.
-//7Dz_ILa64I5G8lBC7zhYerycOdgMfEFwAMomgjriuSI
-
 import { Header } from "./components/Header/header";
 import Home from './components/Home/home';
 import printImages from './components/Utils/printImages';

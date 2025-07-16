@@ -1,11 +1,4 @@
-
-$primary-color: white;
-$secondary-color: black;
-$tertiary-color: red;
-$hover-primary: rgb(209, 209, 209);
-$hover-secondary: rgb(56, 56, 56);
-$hover-tertiary: rgb(160, 0, 0);
-$shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+@import '../Styles/variables';
 
 .common_button {
     color: $secondary-color;

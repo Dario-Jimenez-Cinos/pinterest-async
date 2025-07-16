@@ -1,10 +1,10 @@
-const url = 'https://api.unsplash.com/search/photos';
-const API_KEY = "lV4DsTtIFQgCuuBTH2-sPrkrT1nCi7RWJmvFU4rdF-s";
+const API_URL = import.meta.env.VITE_API_URL;
+const API_KEY = import.meta.env.VITE_API_KEY;
 
 export default async function fetchApi(query = 'gatos'){
 
     try{
-        const response = await fetch(`${url}/?query=${query}&per_page=30&client_id=${API_KEY}`);
+        const response = await fetch(`${API_URL}/?query=${query}&per_page=30&client_id=${API_KEY}`);
         const res = await response.json();
         console.log(res);
 
